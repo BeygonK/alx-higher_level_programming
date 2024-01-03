@@ -1,0 +1,7 @@
+#!/bin/bash
+temp=$(mktemp)
+echo "$PYCODE" > "$temp"
+
+python3 "$temp"
+
+rm "$temp"
