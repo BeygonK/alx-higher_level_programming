@@ -1,1 +1,1 @@
-Learning the basics of doubly linkedlist
+Learning doubly linked list
