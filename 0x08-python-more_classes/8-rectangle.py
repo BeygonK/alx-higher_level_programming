@@ -31,7 +31,7 @@ class Rectangle:
         self.__width = width
         self.__height = height
         type(self).number_of_instances += 1
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """This methd compares rectangles
@@ -42,7 +42,7 @@ class Rectangle:
         Returns:
             (int): biggest rect in area
         Raise:
-            TypeError: if either is not an instance of 
+            TypeError: if either is not an instance of
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError('rect_1 must be an instance of Rectangle')
