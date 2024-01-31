@@ -4,7 +4,6 @@
 
 class Rectangle:
     """This is definion of  a classs
-    
     Attributes:
         width(int): width of rectangle
         height(int): height of rectangle
@@ -31,16 +30,14 @@ class Rectangle:
     @property
     def width(self):
         """This method retrieves the height
-        
         Returns:
             width(int): width
         """
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """This method sets the width to value
-        
         args:
             value(int): value to be set
 
@@ -56,11 +53,9 @@ class Rectangle:
         else:
             self.__width = value
 
-
     @property
     def height(self):
         """This methods gets height
-        
         Returns:
             height(int):height of rectangle
 
