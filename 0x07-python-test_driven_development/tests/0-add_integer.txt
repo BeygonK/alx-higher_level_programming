@@ -1,11 +1,8 @@
-# This is a test case for function that adds two numbers
->>> import sys
+"""This is a test case for function that adds two numbers
 
->>> sys.path.append('..')
-
->>> module = __import__('0-add_integer')
-
->>> add_integer = module.add_integer
+add_integer(...) returns addition of two numbers
+"""
+>>> add_integer = __import__('0-add_integer').add_integer
 
 # Test Case 1
 >>> add_integer(5, 3.7)
@@ -44,4 +41,17 @@ Traceback (most recent call last):
 TypeError: a must be an integer
 
 # Test Case 8
+>>> add_integer(2, 3)
+5
 
+#Test Case 9
+>>> add_integer(float('nan'))
+Traceback(most recent call last):
+	...
+ValueError: cannot convert float NaN to integer
+
+#Test Case 10
+>>> add_integer(float('inf'))
+Traceback: (most recent call last):
+	...
+OverflowError: cannot convert float infinity to integer
