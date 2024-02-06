@@ -21,12 +21,12 @@ TypeError: last_name must be a string
 #Test Case 3:
 #All names are strings
 >>> say_my_name('Denis', 'Beygon')
-My name is Denis Beygon$
+My name is Denis Beygon
 
 #Test Case 4:
 #One string is provided
 >>> say_my_name("Bob")
-My name is Bob $
+My name is Bob
 
 #Test Case 5:
 #NO argument is provided
