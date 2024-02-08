@@ -19,3 +19,44 @@ ValueError: my_int must be greater than 0
 Traceback (most recent call last):
 	...
 TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+#Test Case 4
+>>> my_g.area()
+area() is not implemented
+
+#Test Case 5
+>>> my_g.integer_validation("age")
+Traceback (most recent call last)
+	...
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+#Test Case 6
+>>> my_g.integer_validation("age", 0)
+Traceback (most recent call last):
+	...
+ValueError: age must be greater than 0
+
+#Test Case 7
+>>> my_g.integer_validator("age", [3])
+Traceback (most recent call last):
+	...
+TypeError: age must be an integer
+
+#Test Case 8
+>>> my_g.integer_validator("age", {age})
+Traceback (most recent call last):
+        ...
+TypeError: age must be an integer
+
+#Test Case 9
+>>> my_g.integer_validator("age", True)
+Traceback (most recent call last):
+        ...
+TypeError: age must be an integer
+
+#Test Case 10
+>>> my_g.integer_validator("age", None)
+Traceback (most recent call last):
+        ...
+TypeError: age must be an integer
+
