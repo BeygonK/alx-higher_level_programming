@@ -1,0 +1,9 @@
+#This is a module to test a class inheritance
+>>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList([3, 2, 5, 1, 4])
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+>>> my_list.append(6)
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5, 6]
