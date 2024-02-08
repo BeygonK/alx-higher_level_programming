@@ -1,0 +1,21 @@
+#This is test for a class
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+#Test Case 1
+>>> my_g = BaseGeometry()
+>>> my_g.integer_validator("my_int", "12")
+Traceback (most recent call last):
+	...
+TypeError: my_int must be an integer
+
+#Test Case 2
+>>> my_g.integer_validator("my_int", -1)
+Traceback (most recent call last):
+	...
+ValueError: my_int must be greater than 0
+
+#Test Case 3
+>>> my_g.integer_validator()
+Traceback (most recent call last):
+	...
+TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
