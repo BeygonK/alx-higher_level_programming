@@ -3,6 +3,8 @@
 
 
 Rectangle = __import__('9-rectangle').Rectangle
+
+
 class Square(Rectangle):
     """This is a definition of  class
         Attributes:
@@ -13,9 +15,8 @@ class Square(Rectangle):
     def __init__(self, size):
         """This is a constructor"""
         super().__init__(size, size)
-        self.__size = size
+        self.__size = self.integer_validator("size", size)
 
     def area(self):
         """This is area() method"""
         return self.__size * self.__size
-
