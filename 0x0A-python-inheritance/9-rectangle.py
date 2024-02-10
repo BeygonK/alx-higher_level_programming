@@ -16,16 +16,16 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """This is a constructor"""
-        self._height = self.integer_validator("height", height)
-        self._width = self.integer_validator("width", width)
+        self.__height = self.integer_validator("height", height)
+        self.__width = self.integer_validator("width", width)
 
     def area(self):
         """Calculates the area of rectangle
             Returns:
                 int: area of rectangle
         """
-        return self._height * self._width
+        return self.__height * self.__width
     
     def __str__(self):
         """Prints string representation"""
-        return f"[Rectangle] {self._width}/{self._height}"
+        return f"[Rectangle] {self.__width}/{self.__height}"
