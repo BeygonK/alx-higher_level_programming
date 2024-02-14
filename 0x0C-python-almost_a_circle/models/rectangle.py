@@ -4,6 +4,7 @@
 
 from .base import Base
 
+
 class Rectangle(Base):
     """This is a definition of a class
     Attributes:
