@@ -14,6 +14,7 @@ class Rectangle(Base):
         __y: int
     Methods:
         getters and setters
+        area: returns area
     """
     def __init__(self, width, height, x=0, y=0, id=None):
         """This is a constructor method"""
@@ -75,3 +76,7 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
         else:
             self.__y = value
+
+    def area(self):
+        """This method returns area"""
+        return self.__width * self.__height
