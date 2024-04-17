@@ -15,12 +15,13 @@ def filter_states(username, password, database):
             port=3306)
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY id ASC")
 
     results = cursor.fetchall()
 
     for row in results:
-        print(row)
+        if row[1].startswith("N"):
+            print(row)
 
     db.close()
 
