@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module to fetch from db"""
+"""module to fetch from db with a"""
 
 from sys import argv
 from sqlalchemy import create_engine
