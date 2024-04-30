@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'''This module fetches url'''
 import urllib.request
 
 
