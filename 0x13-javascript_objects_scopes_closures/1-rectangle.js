@@ -1,8 +1,8 @@
 #!/usr/bin/node
 // Create a Javascript class
 module.exports = class Rectangle {
-  constructor (h, w) {
+  constructor (w, h) {
     this.width = w;
-    this.heigth = h;
+    this.height = h;
   }
 };
