@@ -19,5 +19,7 @@ req(apiUrl, (err, res, body) => {
       completedTasks[userId]++;
     }
   });
-  console.log(JSON.stringify(completedTasks, null, 2));
+   let jsonString = JSON.stringify(completedTasks, null, 2);
+   jsonString = jsonString.replace(/"(\d+)":/g, "'$1':"); 
+   console.log(jsonString);
 });
